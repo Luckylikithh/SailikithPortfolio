@@ -7,22 +7,31 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px]  max-w-10xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
 
-        <div>
+        <div >
+           <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Adrian</span>
+            Hi, I'm <span className='text-[#915EFF]'>Likith</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
+          <p className={`${styles.heroSubText} mt-2 mb-3 text-white-100`}>
+            I develop  user <br className='sm:block hidden' />
+            interfaces and full stack web applications.
           </p>
+          </div>
+        <a href="./resume.pdf"  target="_blank" className="absolute z-10">
+    <button class="border border-white hover:bg-white hover:text-black text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline">Download Resume</button>
+  </a>
+          
         </div>
+     
+        
+        
       </div>
 
       <ComputersCanvas />
@@ -44,6 +53,7 @@ const Hero = () => {
           </div>
         </a>
       </div>
+     
     </section>
   );
 };

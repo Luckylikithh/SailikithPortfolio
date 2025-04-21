@@ -39,7 +39,11 @@ const ExperienceCard = ({ experience }) => {
           style={{ margin: 0 }}
         >
           {experience.company_name}
+          <span> {experience.client_name ? `| Client : ${experience.client_name}` : ''}</span> 
+           
+          
         </p>
+      
       </div>
 
       <ul className='mt-5 list-disc ml-5 space-y-2'>
@@ -52,6 +56,19 @@ const ExperienceCard = ({ experience }) => {
           </li>
         ))}
       </ul>
+      <div className="flex flex-wrap gap-2 mt-4">
+      {experience.techStack.map((tech, index) => (
+        <motion.span key={index}
+        className="border border-purple-200 text-white-800 px-3 py-1.5 rounded-full text-sm font-medium transition-all hover:-translate-y-0.5"
+        whileHover={{
+          borderColor: ["#c084fc", "#9333ea", "#7c3aed", "#c084fc"], // Gradient border colors
+          transition: { duration: 3, repeat: Infinity }, // Loop the animation
+        }}
+      >
+        {tech}
+      </motion.span>
+      ))}
+    </div>
     </VerticalTimelineElement>
   );
 };
