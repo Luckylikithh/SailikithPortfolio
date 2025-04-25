@@ -1,11 +1,11 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState,lazy } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./apple_computer/scene.gltf");
+  const computer = useGLTF("/apple_computer/scene.gltf");
 
   return (
     <mesh>
@@ -54,16 +54,17 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    
+    <div className="canvas-container" style={{ width: "100%", height: "100vh" }}>
     <Canvas
       frameloop='demand'
       shadows
-      dpr={[1, 2]}
+      dpr={window.devicePixelRatio > 1 ? [1, 2] : 1}
       camera={{ position: [20, 7, 10], fov: 55 }}
       gl={{ preserveDrawingBuffer: true }}
      
     
     >
+      
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
@@ -75,6 +76,7 @@ const ComputersCanvas = () => {
 
       <Preload all />
     </Canvas>
+    </div>
    
   );
 };
