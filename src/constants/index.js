@@ -161,29 +161,26 @@ const FE= [
 ]
 
 const experiences = [
-  {
+    {
     title: "Full Stack Developer",
-    company_name: "Zensar Technologies",
+    company_name: "HCL Technologies",
     client_name: "Healthcare",
     icon: zensar,
     iconBg: "#FFFFFF",
     date: "Jan 2018 - Apr 2019",
     points: [
-      "Developed a microservices-based architecture utilizing Spring Boot, achieving a 30% reduction in deployment time and enhancing system scalability for healthcare applications.",
-      "Implemented RESTful APIs that improved data retrieval speed by 25%, significantly enhancing user experience for healthcare professionals accessing patient data.",
-     " Integrated Fast Healthcare Interoperability Resources (FHIR) standards to ensure interoperability, facilitating seamless data exchange between Electronic Medical Record (EMR) systems and third-party applications.",
-      "Achieved 95% compliance with Health Insurance Portability and Accountability Act (HIPAA) regulations through the implementation of rigorous security measures, including data encryption and access controls.",
-      "Designed and developed scalable backend services using Core Java and the Spring Framework, ensuring robust performance for healthcare applications handling large volumes of patient data.",
-     " Created responsive frontend applications using Angular and Bootstrap, leading to a 40% increase in user engagement among healthcare staff and patients.",
-      "Implemented optimized database solutions using Oracle and MySQL, enhancing query performance and ensuring quick access to critical healthcare information.",
-     "Developed unit and integration tests using JUnit and Mockito, ensuring high code quality and reliability of healthcare applications through rigorous testing protocols.",
-      "Managed Continuous Integration/Continuous Deployment (CI/CD) pipelines using Jenkins, automating build and deployment processes to streamline updates and feature releases in healthcare software.",
-      "Engaged in Agile/Scrum ceremonies, actively contributing to sprint planning, daily stand-ups and retrospectives to enhance team collaboration and project delivery in a fast-paced healthcare environment.",
-      "Implemented caching strategies using Redis to improve application performance, resulting in faster data access and reduced load times for healthcare applications.",
-      "Utilized Confluence to document technical designs, sprint retrospectives, and team knowledge bases, ensuring transparency and streamlined collaboration across cross-functional teams.",
+     "Configured and supported Cisco and Juniper switching and routing platforms, ensuring stable and high-performance connectivity for retail business operations.",
+"Enhanced system scalability and functionality by building RESTful APIs and backend services with Java and Spring Framework, ensuring seamless integration with front-end applications.",
+"Boosted application performance by 30% and increased user engagement through the development of cross-platform applications using Java and modern JavaScript frameworks.",
+"Improved deployment efficiency by 40% and optimized resource utilization by introducing Docker-based containerization into the CI/CD pipeline.",
+"Strengthened application reliability by implementing unit and integration testing with JUnit and Mockito, achieving over 85% test coverage and reducing production bugs.",
+"Improved monitoring and system observability by integrating ELK Stack (Elasticsearch, Logstash, Kibana), enabling real-time tracking of application performance and faster issue resolution.",
+"Increased team productivity by 20% by actively contributing to Agile workflows sprint planning, Jira task management, daily stand-ups, and retrospectives.",
+"Elevated database performance by 25% through optimized schema design, advanced indexing techniques, and efficient data modeling across MySQL and MongoDB environments.",
+"Modernized the data pipeline by replacing a legacy framework with a Kafka-powered messaging system, enabling real-time data streaming and improving processing efficiency by 50%."
       
     ],
-    techStack: ["JAVA(Spring boot)", "MySQL", "Redis", "Jenkins", "Confluence","CI/CD","HIPPA","FHIR","EMR","Angular","Bootstrap"], 
+    techStack: ["JAVA(Spring boot)", "MySQL", "Redis", "Jenkins", "Confluence","CI/CD","Angular","Bootstrap", "ELK Stack (Elasticsearch, Logstash, Kibana)", "Kafka","Docker","AWS"], 
   },
 
 
@@ -194,32 +191,24 @@ const experiences = [
     client_name: "HDFC Bank",
     icon: TCS,
     iconBg: "#FFFFFF",
-    date: "May 2019 - May 2022",
+    date: "May 2019 - Dec 2022",
     points: [
-      "Developed front-end UI screens of HDFC Bank's mobile app.",
-      "Developed UI screens for UPI module in HDFC App, resulting in 20% faster payment processing for 2M+ users.",
-      "Implemented native iOS methods to ensure app functionality on iOS devices, enabling features such as gestures and camera access during runtime.",
-      "Developed QR code scanning capability and implemented deep linking functionality on Android, enabling seamless payment completion within the app.",
-      "Implemented blocking functionality for fraud prevention, reducing fraudulent transactions by 15%.",
+" Designed and developed responsive front-end user interfaces for HDFC Bank's mobile application using Angular and HTML5, enhancing user engagement by 25%.",
+"Developed dynamic forms and dashboards with Angular Reactive Forms and RxJS, ensuring smooth state management and real-time updates.",
+"Engineered the UPI module for the HDFC App, optimizing payment processing speed by 20% for over 2 million users through efficient API integration and streamlined workflows.",
+"Engineered scalable microservices using Spring Boot and Hibernate, handling high-volume financial transactions with optimized ORM mappings and connection pooling.",
+"Built QR code scanning capabilities and implemented deep linking on Android using Java, ensuring smooth in-app payment completion with a 15% reduction in transaction drop-offs.",
+"Developed fraud prevention mechanisms by implementing real-time blocking functionality, reducing fraudulent transactions by 15% through advanced algorithmic checks.",
+"Delivered a comprehensive credit card management module within the HDFC app, allowing users to manage credit limits, block/unblock cards and modify billing cycles via secure RESTful APIs.",
+"Created a dynamic EMI conversion feature for eligible credit card transactions based on transaction type, increasing user adoption of flexible repayment options by 30%.",
+"Architected a centralized loan dashboard leveraging Spring Boot and Hibernate, enabling users to view active loans, EMI schedules, outstanding balances, loan tenure and download essential documents such as interest certificates and welcome letters directly from the app.",
+"Worked in Agile Scrum teams, delivering Java back-end and Angular front-end features in 2-week sprints with 90% on-time delivery."
       
     ],
-    techStack: ["Angular JS","Java(Spring boot)", "Native : Android - Java", "IOS - Objective-C"],
+    techStack: ["Angular JS","Java(Spring boot)", "Native : Android - Java"],
   },
  
-  {
-    title: "Front-end Developer",
-    company_name: "TATA CONSULTANCY SERVICES",
-    icon: TCS,
-    client_name: "ICICI Bank",
-    iconBg: "#FFFFFF",
-    date: " May 2022 - Dec 2022",
-    points: [
-      "Credit cards- One can manage everything related to credit card using imobile application like managing cc limits, block or unlock, mange billing cycle", 
-      "Credit card EMI : With this feature user able to convert their transactions of current cycle into emi based on the transaction type",
-      "Loans: User can see all his loans in this section. Can check all the emi details, balance amount, tenure , interest certificate, welcome letter and also can pay emi using this application.",
-    ],
-    techStack: ["KnockoutJS","Python(Django)", "Native : Android - Java", "IOS - Swift"],
-  },
+
 
 
   {
@@ -237,24 +226,27 @@ const experiences = [
     techStack: ["JavaScript","Java","Tailwind CSS,","Figma","Deep Learning","Node.js","React.js"],
   },
 
-  {
+{
     title: "Full Stack Developer",
-    company_name: "The Home Depot",
+    company_name: "Morgan Stanley",
     icon: homedepot,
-    client_name: "The Home Depot",
+    client_name: "Morgan Stanley",
     iconBg: "#FFFFFF",
     date: " Jan 2024 - Current",
     points: [
-      "Deployed scalable Spring Boot 3.x microservices for catalog, order management and customer reviews, integrating OAuth 2.0 and Spring Security for secure, role-based API access in a multi-tenant e-commerce platform.",
-      "Built enterprise-grade components using Angular for admin dashboards and internal tools.",
-      "Implemented server-side rendering (SSR) with Next.js to improve Time to First Byte (TTFB) and boost organic traffic, increasing Google Lighthouse SEO scores on key product and category pages by 28%.",
-      "Developed high-performance Node.js middleware services using Express.js to aggregate and proxy third-party inventory APIs, reducing frontend load times by 30% and enabling real-time stock synchronization across 5+ vendor platforms.",
-      "Engineered asynchronous event-driven architecture with Apache Kafka, decoupling inventory updates, order confirmation and shipment tracking across services, reducing inter-service latency by 40%.",
-     "Developed pixel-perfect responsive UI using Tailwind CSS, aligning front-end components with Figma design specs and improving page load speed by 22% through code splitting and lazy loading.",
-      "Integrated AWS Cognito with JWT-based authentication, enabling secure Single Sign-On (SSO), multi-factor authentication (MFA) and seamless user registration for active shoppers.",
-      "Utilized Amazon API Gateway and AWS Lambda to of load and asynchronously handle marketing analytics, promotional campaign click-through tracking and A/B testing data ingestion without impacting core transactional performance.",
+      "Built modular and scalable microservices with Spring Boot, Java, and Spring Cloud (Eureka, Config Server, API Gateway) to streamline digital loan origination, KYC checks, and payment workflows.",
+"Increased financial transaction API throughput by 42% by implementing GraphQL with Next.js SSR, resulting in faster rendering and reduced load times on high-traffic B2B dashboards.",
+"Achieved flawless PCI DSS and SOX audit compliance by deploying Spring Security mechanisms—OAuth 2.0, RBAC, and tokenization—to safeguard PII and transaction metadata.",
+"Designed and deployed responsive portfolio analytics dashboards using React.js, Redux Toolkit, and Tailwind CSS, providing auditors and compliance teams with real-time insights.",
+"Developed backward-compatible RESTful and SOAP APIs for ACH, SEPA, and SWIFT tracking, ensuring seamless integration with legacy COBOL-based financial systems.",
+"Automated end-to-end DevOps pipelines with Jenkins, GitHub Actions, Docker, and Helm; deployed microservices to AWS EKS, ensuring high availability in trading environments.",
+"Enforced secure authentication and authorization with JWT, OAuth 2.0, and OIDC for sensitive banking applications, including loan records, mortgage systems, and credit scoring.",
+"Integrated LLM-powered intelligent assistants with AI/ML algorithms (XGBoost, Random Forest) to automate loan application anomaly detection, generate real-time creditworthiness insights, and support auditors with natural language query processing across compliance datasets.",
+"Built fraud detection dashboards in Splunk by integrating AML rule sets with transactional logs, reducing fraud identification times by 36%.",
+"Ensured 90% test coverage across unit, integration, and contract testing using JUnit 5, Mockito, and Rest Assured, with code quality enforced via JaCoCo and SonarQube.",
+"Leveraged Oracle 19c, MongoDB, and Redis with Hibernate JPA and Spring Data to enable real-time credit risk analytics and low-latency caching for high-volume financial data.",
     ],
-    techStack: ["JAVA(Spring boot)", "SSO", "AWS Cognito","Amazon API Gateway","AWS","Next.js","Tailwind CSS","Node.js"],
+    techStack: ["JAVA(Spring boot)", "SSO", "AWS Cognito","Amazon API Gateway","AWS","Next.js","Tailwind CSS","Node.js","React.js"],
   },
  
 ];
